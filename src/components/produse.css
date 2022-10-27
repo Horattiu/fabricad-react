@@ -1,0 +1,79 @@
+/* //////////// product cards ////////////// */
+
+.pula {
+  text-align: center;
+  background-color: rgba(241 233 233 / 48%);
+  font-weight: 600;
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+  padding: 6rem;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(241 233 233 / 48%);
+  /* height: 45rem; */
+  align-items: center;
+}
+
+.product-container {
+  margin: 0 3rem 9rem 3rem;
+}
+
+.card-container {
+  /* border: 3px solid rgb(199, 199, 199); */
+  /* border-radius: 4px; */
+  width: 12rem;
+  height: 20rem;
+  background-color: rgb(255, 255, 255);
+  /* position: relative; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.card-container img {
+  width: 100%;
+}
+
+.card-container:hover {
+  transform: translateY(-1.2rem);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.product-container img {
+  display: block;
+  /* height: 20rem; */
+}
+.product-name h3 {
+  margin-top: 1.4rem;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  color: rgb(63, 63, 63);
+  font-weight: 500;
+}
+.product-price {
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  color: rgb(63, 63, 63);
+}
+
+/* ///////////////////// TEXT, LOGO BOX ////////////////// */
+
+.text-box h1 {
+  font-size: 3rem;
+  margin-bottom: 0.6rem;
+  color: rgb(36, 36, 36);
+  letter-spacing: 0.2rem;
+  font-weight: 800;
+}
+
+.text-box p {
+  font-size: 1.5rem;
+  color: rgb(51, 51, 51);
+}
+
+.logo-box img {
+  display: block;
+  width: 17rem;
+}
