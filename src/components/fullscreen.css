@@ -1,10 +1,31 @@
-.fullScreenImageContainer {
-  /* border: 5px solid red; */
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
-  /* text-align: center; */
+.modal {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
   position: absolute;
-  margin: 0 auto;
-  background-color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-modal {
+  display: inline-block;
+  position: relative;
+  margin-left: 48rem;
+  margin-top: 3rem;
+  font-size: 3rem;
+  color: #aaaaaa;
+  transform: rotate(45deg);
 }

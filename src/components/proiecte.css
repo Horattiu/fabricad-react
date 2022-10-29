@@ -56,6 +56,8 @@
 
 .item-container :hover {
   transform: scale(1.1);
+  opacity: 0.6;
+
   /* transition: all 0.4s; */
   /* max-width: 40rem; */
 }

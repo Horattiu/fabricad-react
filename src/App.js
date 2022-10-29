@@ -6,8 +6,11 @@ import Proiecte from "./components/Proiecte";
 import Produs from "./components/Produs";
 import { useEffect, useState } from "react";
 import FullScreenImage from "./components/FullScreenImage";
+import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
+  const [isOpenn, setIsOpenn] = useState(true);
+
   const [cartItems, setCartItems] = useState([]);
   const [produse, setProduse] = useState([
     {
@@ -52,6 +55,7 @@ function App() {
 
   return (
     <div className="App">
+      <ShoppingCart isOpenn={isOpenn} setIsOpenn={setIsOpenn} />
       <Navbar />
       <Routes>
         <Route path="produse" element={<Produse />} />
