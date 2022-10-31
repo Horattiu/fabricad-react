@@ -9,7 +9,7 @@ import FullScreenImage from "./components/FullScreenImage";
 import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
-  const [isOpenn, setIsOpenn] = useState(true);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   const [cartItems, setCartItems] = useState([]);
   const [produse, setProduse] = useState([
@@ -55,8 +55,8 @@ function App() {
 
   return (
     <div className="App">
-      <ShoppingCart isOpenn={isOpenn} setIsOpenn={setIsOpenn} />
-      <Navbar />
+      <ShoppingCart isCartOpen={isCartOpen} setIsCartOpen={setIsCartOpen} />
+      <Navbar setIsCartOpen={setIsCartOpen} />
       <Routes>
         <Route path="produse" element={<Produse />} />
         <Route path="proiecte" element={<Proiecte />} />

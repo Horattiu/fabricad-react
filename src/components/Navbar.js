@@ -2,11 +2,8 @@ import "./navbar.css";
 import { Link } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
 import { useState } from "react";
-import ShoppingCart from "./ShoppingCart";
 
-const Navbar = () => {
-  const [IsOpenn, setIsOpenn] = useState(false);
-
+const Navbar = ({ setIsCartOpen }) => {
   return (
     <nav className="navbar">
       <Link to="/">
@@ -17,13 +14,12 @@ const Navbar = () => {
         <Link to="/despre">despre</Link>
         <Link to="/produse">produse</Link>
         <Link to="/proiecte">proiecte</Link>
-        <Link to="/">
+        <div onClick={() => setIsCartOpen(true)}>
           <FiShoppingCart
-            // isOpenn={isOpenn}
-            // setIsOpenn={setIsOpenn}
-            onClick={() => setIsOpenn(false)}
+          // isOpenn={isOpenn}
+          // setIsOpenn={setIsOpenn}
           />
-        </Link>
+        </div>
       </div>
     </nav>
   );

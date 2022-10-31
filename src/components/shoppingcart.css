@@ -7,6 +7,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 7;
+  border-radius: 10px;
 
   /* margin: 0 auto; */
 }
@@ -17,4 +19,16 @@
   /* top: 50%;
   left: 50%; */
   /* transform: translate(-50%, -50%); */
+}
+
+.cart-close {
+  font-size: 2rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cart-background {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }

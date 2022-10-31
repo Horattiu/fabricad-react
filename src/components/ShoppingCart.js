@@ -1,20 +1,21 @@
 import "./shoppingcart.css";
 import React from "react";
-import { useState } from "react";
 
-function ShoppingCart({ isOpenn, setIsOpenn }) {
-  return isOpenn ? (
-    <div className="cart-container">
-      <div className="cart-content">
-        (ARTICOL)(button-)(CANTITATE)(button+)(PRET)
+function ShoppingCart({ isCartOpen, setIsCartOpen }) {
+  console.log(isCartOpen);
+  return isCartOpen ? (
+    <div className="modal">
+      {" "}
+      red
+      <div className="cart-container">
+        <div className="cart-content">
+          (ARTICOL)<button>-</button>(CANTITATE)<button>+</button>(PRET)
+          <div className="cart-content">TOTAL (PRET)</div>
+        </div>
+        <div onClick={() => setIsCartOpen(false)} className="cart-close">
+          x
+        </div>
       </div>
-      <div className="cart-content">
-        (ARTICOL)(button-)(CANTITATE)(button+)(PRET)
-      </div>
-      <div className="cart-content">
-        (ARTICOL)(button-)(CANTITATE)(button+)(PRET)
-      </div>
-      <div className="cart-content">TOTAL (PRET)</div>
     </div>
   ) : null;
 }

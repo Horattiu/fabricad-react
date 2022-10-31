@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import Navbar from "./Navbar";
 import "./produs.css";
 
-const Produs = ({ produse, setCartItems, cartItems }) => {
+const Produs = ({ produse, setCartItems, cartItems, setIsCartOpen }) => {
   const produsId = useParams().id;
   // console.log(produsId);
   // console.log(useParams());
@@ -26,7 +26,11 @@ const Produs = ({ produse, setCartItems, cartItems }) => {
           <h2>{produs.pret}</h2>
           <h3>{produs.material}</h3>
           <h4>{produs.dimensiuni}</h4>
-          <button onClick={() => setCartItems([...cartItems, produs])}>
+          <button
+            onClick={() => {
+              setCartItems([...cartItems, produs]);
+            }}
+          >
             add to card
           </button>
         </div>
