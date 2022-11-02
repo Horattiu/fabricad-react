@@ -1,17 +1,24 @@
 import "./shoppingcart.css";
 import React from "react";
 
-function ShoppingCart({ isCartOpen, setIsCartOpen }) {
-  console.log(isCartOpen);
+function ShoppingCart({ isCartOpen, setIsCartOpen, cartItems, setCartItems }) {
   return isCartOpen ? (
     <div className="modal">
       {" "}
       red
       <div className="cart-container">
-        <div className="cart-content">
-          (ARTICOL)<button>-</button>(CANTITATE)<button>+</button>(PRET)
-          <div className="cart-content">TOTAL (PRET)</div>
-        </div>
+        {cartItems.map((produs) => (
+          <div className="cart-content" key={produs.id}>
+            <button>-</button>
+            (CANTITATE)
+            <button onClick={() => setCartItems([...cartItems, produs])}>
+              +
+            </button>{" "}
+            <span className="cart-content"> {produs.pret}</span>
+            <div className="cart-content">TOTAL {}</div>
+            <img src={produs.imgPath}></img>
+          </div>
+        ))}
         <div onClick={() => setIsCartOpen(false)} className="cart-close">
           x
         </div>

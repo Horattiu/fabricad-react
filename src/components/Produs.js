@@ -12,7 +12,7 @@ const Produs = ({ produse, setCartItems, cartItems, setIsCartOpen }) => {
 
   const produs = produse.find((prod) => prod.id === Number(produsId));
 
-  console.log(cartItems);
+  // console.log(cartItems);
 
   return (
     <>

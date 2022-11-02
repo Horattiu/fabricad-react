@@ -54,7 +54,12 @@ function App() {
 
   return (
     <div className="App">
-      <ShoppingCart isCartOpen={isCartOpen} setIsCartOpen={setIsCartOpen} />
+      <ShoppingCart
+        isCartOpen={isCartOpen}
+        setIsCartOpen={setIsCartOpen}
+        cartItems={cartItems}
+        setCartItems={setCartItems}
+      />
       <Navbar setIsCartOpen={setIsCartOpen} />
       <Routes>
         <Route path="produse" element={<Produse />} />
