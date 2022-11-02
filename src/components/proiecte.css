@@ -1,5 +1,5 @@
 .work-container {
-  max-width: 130rem;
+  /* max-width: 130rem; */
   margin: 0 auto;
   width: 64%;
   margin-bottom: 6rem;
@@ -12,46 +12,29 @@
   font-size: 2.2rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
-
   padding: 6rem;
 }
 
 .work-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* justify-items: center; */
-  gap: 1.2rem;
-  /* margin-top: 9rem; */
-  /* margin-right: 1.2rem; */
-  /* justify-content: center; */
-  /* max-width: 100%; */
-  overflow: hidden;
+  gap: 1rem;
 }
 
 .work-item {
-  /* overflow: hidden; */
-  /* max-width: 35rem; */
-  /* height: 100%; */
   object-fit: cover;
   width: 100%;
+  border-radius: 10px;
 }
 
 .item-container {
   overflow: hidden;
-  /* width: 100%; */
 }
 
 .item-container img {
   display: block;
   width: 100%;
   transition: all 0.4s;
-  /* display: block;
-    max-width: 40rem; */
-  /* min-width: 20rem; */
-
-  /* height: 100%; */
-  /* object-fit: cover; */
-  /* width: 100%; */
 }
 
 .item-container :hover {

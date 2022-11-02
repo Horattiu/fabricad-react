@@ -1,0 +1,5 @@
+@media (max-width: 84em) {
+  .work-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

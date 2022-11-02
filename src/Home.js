@@ -1,5 +1,4 @@
 import Produse from "./components/Produse";
-import Carousel from "./components/Carousel";
 import Proiecte from "./components/Proiecte";
 import Footer from "./components/Footer";
 import Vid from "./components/Video";

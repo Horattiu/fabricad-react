@@ -5,7 +5,6 @@ import { Routes, Route } from "react-router-dom";
 import Proiecte from "./components/Proiecte";
 import Produs from "./components/Produs";
 import { useEffect, useState } from "react";
-import FullScreenImage from "./components/FullScreenImage";
 import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
