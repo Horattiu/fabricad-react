@@ -9,7 +9,15 @@ function ShoppingCart({ isCartOpen, setIsCartOpen, cartItems, setCartItems }) {
       <div className="cart-container">
         {cartItems.map((produs) => (
           <div className="cart-content" key={produs.id}>
-            <button>-</button>
+            <button
+              onClick={() =>
+                setCartItems(() =>
+                  cartItems.filter((cartItem) => cartItem.id !== produs.id)
+                )
+              }
+            >
+              -
+            </button>
             (CANTITATE)
             <button onClick={() => setCartItems([...cartItems, produs])}>
               +
