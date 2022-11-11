@@ -9,22 +9,41 @@
   transform: translate(-50%, -50%);
   z-index: 7;
   border-radius: 10px;
-
   /* margin: 0 auto; */
 }
+
+.cart-img {
+  width: 5rem;
+}
+.cart-nume {
+  margin-left: 2rem;
+}
+.quantity-buttons {
+  margin-left: 2rem;
+}
 .cart-content {
+  border-bottom: 2px solid rgb(212, 212, 212);
   text-align: center;
   display: block;
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%); */
+  display: flex;
+  padding: 1.4rem;
+  align-items: center;
+}
+.cart-pret {
+  margin-left: 10rem;
 }
 
+.cart-total {
+  margin-top: 2rem;
+}
 .cart-close {
   font-size: 2rem;
   display: inline-block;
   cursor: pointer;
+  position: absolute;
+  left: 100%;
+  top: -2rem;
+  color: white;
 }
 
 .cart-background {

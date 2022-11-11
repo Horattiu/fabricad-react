@@ -4,29 +4,30 @@ import React from "react";
 function ShoppingCart({ isCartOpen, setIsCartOpen, cartItems, setCartItems }) {
   return isCartOpen ? (
     <div className="modal">
-      {" "}
-      red
       <div className="cart-container">
         {cartItems.map((produs) => (
           <div className="cart-content" key={produs.id}>
-            <button
-              onClick={() =>
-                setCartItems(() =>
-                  cartItems.filter((cartItem) => cartItem.id !== produs.id)
-                )
-              }
-            >
-              -
-            </button>
-            (CANTITATE)
-            <button onClick={() => setCartItems([...cartItems, produs])}>
-              +
-            </button>{" "}
-            <span className="cart-content"> {produs.pret}</span>
-            <div className="cart-content">TOTAL {}</div>
-            <img src={produs.imgPath}></img>
+            <img className="cart-img" src={produs.imgPath}></img>
+            <span className="cart-nume"> {produs.nume}</span>
+            <div className="quantity-buttons">
+              <button
+                onClick={() =>
+                  setCartItems(() =>
+                    cartItems.filter((cartItem) => cartItem.id !== produs.id)
+                  )
+                }
+              >
+                -
+              </button>
+              (1)
+              <button onClick={() => setCartItems([...cartItems, produs])}>
+                +
+              </button>
+            </div>
+            <span className=" cart-pret"> {produs.pret}</span>
           </div>
         ))}
+        <div className=" cart-total">TOTAL {} lei</div>
         <div onClick={() => setIsCartOpen(false)} className="cart-close">
           x
         </div>
