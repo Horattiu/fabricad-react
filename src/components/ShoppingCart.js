@@ -11,23 +11,49 @@ function ShoppingCart({ isCartOpen, setIsCartOpen, cartItems, setCartItems }) {
             <span className="cart-nume"> {produs.nume}</span>
             <div className="quantity-buttons">
               <button
-                onClick={() =>
-                  setCartItems(() =>
-                    cartItems.filter((cartItem) => cartItem.id !== produs.id)
-                  )
-                }
+                onClick={() => {
+                  setCartItems(
+                    cartItems
+                      .map((cartItem) => {
+                        if (cartItem.id === produs.id) {
+                          return {
+                            ...cartItem,
+                            numarProduse: cartItem.numarProduse - 1,
+                          };
+                        } else {
+                          return cartItem;
+                        }
+                      })
+                      .filter((cartItem) => cartItem.numarProduse !== 0)
+                  );
+                }}
               >
                 -
               </button>
-              (1)
-              <button onClick={() => setCartItems([...cartItems, produs])}>
+              {cartItems.find((item) => item.id === produs.id).numarProduse}
+              <button
+                onClick={() => {
+                  setCartItems(
+                    cartItems.map((cartItem) => {
+                      if (cartItem.id === produs.id) {
+                        return {
+                          ...cartItem,
+                          numarProduse: cartItem.numarProduse + 1,
+                        };
+                      } else {
+                        return cartItem;
+                      }
+                    })
+                  );
+                }}
+              >
                 +
               </button>
             </div>
             <span className=" cart-pret"> {produs.pret}</span>
           </div>
         ))}
-        <div className=" cart-total">TOTAL {} lei</div>
+        <div className="cart-total">TOTAL lei</div>
         <div onClick={() => setIsCartOpen(false)} className="cart-close">
           x
         </div>

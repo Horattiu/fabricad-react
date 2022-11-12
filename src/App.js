@@ -20,6 +20,7 @@ function App() {
       dimensiuni: "20 x 80cm",
 
       imgPath: require("../src/img/img4.jpg"),
+      numarProduse: 1,
     },
 
     {
@@ -29,6 +30,7 @@ function App() {
       material: "material: plywood",
       dimensiuni: "50 x 90cm",
       imgPath: require("../src/img/img8.jpg"),
+      numarProduse: 1,
     },
     {
       id: 3,
@@ -38,6 +40,7 @@ function App() {
       dimensiuni: "50 x 140cm",
 
       imgPath: require("../src/img/img2.jpg"),
+      numarProduse: 1,
     },
     {
       id: 4,
@@ -47,6 +50,7 @@ function App() {
       dimensiuni: "200 x 90cm",
 
       imgPath: require("../src/img/img6.jpg"),
+      numarProduse: 1,
     },
   ]);
 

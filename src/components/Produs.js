@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import Navbar from "./Navbar";
 import "./produs.css";
 
-const Produs = ({ produse, setCartItems, cartItems, setIsCartOpen }) => {
+const Produs = ({ produse, setCartItems, cartItems }) => {
   const produsId = useParams().id;
   // console.log(produsId);
   // console.log(useParams());
@@ -28,7 +28,18 @@ const Produs = ({ produse, setCartItems, cartItems, setIsCartOpen }) => {
           <h4>{produs.dimensiuni}</h4>
           <button
             onClick={() => {
-              setCartItems([...cartItems, produs]);
+              setCartItems(
+                cartItems.map((cartItem) => {
+                  if (cartItem.id === produs.id) {
+                    return {
+                      ...cartItem,
+                      numarProduse: cartItem.numarProduse + 1,
+                    };
+                  } else {
+                    return cartItem;
+                  }
+                })
+              );
             }}
           >
             add to card
