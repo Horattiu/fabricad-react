@@ -4,15 +4,36 @@ import "./produs.css";
 
 const Produs = ({ produse, setCartItems, cartItems }) => {
   const produsId = useParams().id;
-  // console.log(produsId);
-  // console.log(useParams());
-  // console.log(window.location);
-
-  // const produs = produse.filter((prod) => prod.id === produsId);
 
   const produs = produse.find((prod) => prod.id === Number(produsId));
 
-  // console.log(cartItems);
+  const handleAddToCart = () => {
+    const itemToBeAddedToCart = cartItems.find(
+      (cartItem) => cartItem.id === produs.id
+    );
+
+    if (cartItems.length === 0) {
+      setCartItems([...cartItems, produs]);
+      return;
+    }
+
+    if (!cartItems.includes(itemToBeAddedToCart)) {
+      return setCartItems([...cartItems, produs]);
+    }
+
+    setCartItems(
+      cartItems.map((cartItem) => {
+        if (cartItem.id === produs.id) {
+          return {
+            ...cartItem,
+            numarProduse: cartItem.numarProduse + 1,
+          };
+        } else {
+          return cartItem;
+        }
+      })
+    );
+  };
 
   return (
     <>
@@ -26,37 +47,7 @@ const Produs = ({ produse, setCartItems, cartItems }) => {
           <h2>{produs.pret}</h2>
           <h3>{produs.material}</h3>
           <h4>{produs.dimensiuni}</h4>
-          <button
-            onClick={() => {
-              const itemToBeAddedToCart = cartItems.find(
-                (cartItem) => cartItem.id === produs.id
-              );
-
-              if (cartItems.length === 0) {
-                setCartItems([...cartItems, produs]);
-                return;
-              }
-
-              if (!cartItems.includes(itemToBeAddedToCart)) {
-                return setCartItems([...cartItems, produs]);
-              }
-
-              setCartItems(
-                cartItems.map((cartItem) => {
-                  if (cartItem.id === produs.id) {
-                    return {
-                      ...cartItem,
-                      numarProduse: cartItem.numarProduse + 1,
-                    };
-                  } else {
-                    return cartItem;
-                  }
-                })
-              );
-            }}
-          >
-            add to card
-          </button>
+          <button onClick={handleAddToCart}>add to card</button>
         </div>
       </div>
 
