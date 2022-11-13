@@ -28,17 +28,16 @@ const Produs = ({ produse, setCartItems, cartItems }) => {
           <h4>{produs.dimensiuni}</h4>
           <button
             onClick={() => {
+              const itemToBeAddedToCart = cartItems.find(
+                (cartItem) => cartItem.id === produs.id
+              );
+
               if (cartItems.length === 0) {
                 setCartItems([...cartItems, produs]);
                 return;
               }
 
-              const item = cartItems.find(
-                (cartItem) => cartItem.id === produs.id
-              );
-
-              if (!cartItems.includes(item)) {
-                console.log("produs nou adaugat");
+              if (!cartItems.includes(itemToBeAddedToCart)) {
                 return setCartItems([...cartItems, produs]);
               }
 
