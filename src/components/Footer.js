@@ -6,7 +6,11 @@ const Footer = () => (
       <h1 class="logo-footer">fabricad</h1>
       <ul>
         <li className="facebook-logo">
-          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon
+            a
+            href="https://m.facebook.com/fabricad.serv/?_rdr"
+            name="logo-facebook"
+          ></ion-icon>
         </li>
         <li>
           <ion-icon name="logo-instagram"></ion-icon>
@@ -16,7 +20,7 @@ const Footer = () => (
     </div>
 
     <div class="footer-box">
-      <h1>Despre noi</h1>
+      <h1>despre noi</h1>
       <p>
         sediul fabrica se afla in barai, Cluj Napoca.
         <br />
@@ -25,14 +29,13 @@ const Footer = () => (
       </p>
     </div>
 
-    <div class="footer-box">
+    <div class="footer-box ">
       <h1>contact</h1>
       <p>
         098-093-933
         <br />
         098-093-933
         <br />
-        cluj napoca, barai <br />
         fabricad@gmail.com
       </p>
     </div>

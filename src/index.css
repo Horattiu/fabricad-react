@@ -1,9 +1,13 @@
 * {
   margin: 0;
-  font-family: "Roboto";
+  font-family: "Rubik";
   color: #333;
 }
 
 body {
   min-height: 100vh;
+}
+
+html {
+  letter-spacing: -0.5px;
 }

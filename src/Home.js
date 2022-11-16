@@ -6,7 +6,6 @@ import Vid from "./components/Video";
 const Home = () => {
   return (
     <div className="home">
-      {/* <Carousel /> */}
       <Vid />
       <Produse />
       <Proiecte />

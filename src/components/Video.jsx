@@ -6,6 +6,14 @@ function Vid() {
   return (
     <div className="video-container">
       <video src={cncVid} autoPlay loop muted />
+      <p>
+        digital fabrication <br />
+        CNC cutting
+        <br />
+        3D design
+        <br />
+        furniture
+      </p>
     </div>
   );
 }

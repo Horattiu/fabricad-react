@@ -22,7 +22,6 @@
 }
 
 .card-container {
-  /* border: 3px solid rgb(199, 199, 199); */
   /* border-radius: 4px; */
   width: 12rem;
   height: 20rem;
@@ -45,7 +44,6 @@
 }
 .product-container img {
   display: block;
-  /* height: 20rem; */
 }
 .product-name h3 {
   margin-top: 2.2rem;
@@ -56,8 +54,8 @@
 }
 .product-price {
   font-size: 1.4rem;
-  /* margin-left: 2rem; */
   text-align: center;
+  margin-top: 1rem;
   color: rgb(63, 63, 63);
 }
 

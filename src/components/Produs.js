@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
+// import Navbar from "./components/Navbar";
 import "./produs.css";
 
 const Produs = ({ produse, setCartItems, cartItems }) => {
@@ -51,7 +52,7 @@ const Produs = ({ produse, setCartItems, cartItems }) => {
         </div>
       </div>
 
-      <div class="container_box">
+      {/* <div class="container_box">
         <div id="box_1" class="box">
           <img src="" alt="" class="src" />
         </div>
@@ -63,7 +64,7 @@ const Produs = ({ produse, setCartItems, cartItems }) => {
         <div id="box-3" class="box">
           <img src="" alt="" class="src" />
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -2,6 +2,7 @@ import "./navbar.css";
 import { Link } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
 import { useState, useEffect } from "react";
+import MobileNav from "./MobileNav";
 
 const Navbar = ({ setIsCartOpen }) => {
   const [sticky, setSticky] = useState(false);
@@ -15,24 +16,21 @@ const Navbar = ({ setIsCartOpen }) => {
 
   return (
     <nav className={`${sticky ? " sticky" : ""}`}>
-      <div className="navbar">
+      <div className="navbar-desktop ">
         <Link to="/">
           <h1 style={{ cursor: "pointer" }}>fabricad</h1>
         </Link>
 
         <div className="links">
-          <Link to="/despre">DESPRE</Link>
-          <Link to="/produse">PRODUSE</Link>
-          <Link to="/proiecte">PROIECTE</Link>
+          <Link to="/despre">despre</Link>
+          <Link to="/produse">produse</Link>
+          <Link to="/proiecte">proiecte</Link>
           <div onClick={() => setIsCartOpen(true)}>
-            <FiShoppingCart
-              className="cart-icon"
-              // isOpenn={isOpenn}
-              // setIsOpenn={setIsOpenn}
-            />
+            <FiShoppingCart className="cart-icon" />
           </div>
         </div>
       </div>
+      <MobileNav />
     </nav>
   );
 };
