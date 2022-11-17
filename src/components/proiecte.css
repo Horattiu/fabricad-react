@@ -14,6 +14,9 @@
   letter-spacing: 0.1rem;
   padding: 6rem;
 }
+.pulaa span {
+  color: #333;
+}
 
 .work-list {
   display: grid;

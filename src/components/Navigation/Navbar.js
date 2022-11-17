@@ -30,7 +30,7 @@ const Navbar = ({ setIsCartOpen }) => {
           </div>
         </div>
       </div>
-      <MobileNav />
+      <MobileNav setIsCartOpen={setIsCartOpen} />
     </nav>
   );
 };

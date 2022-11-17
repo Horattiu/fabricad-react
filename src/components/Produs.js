@@ -45,10 +45,10 @@ const Produs = ({ produse, setCartItems, cartItems }) => {
 
         <div class="details">
           <h1>{produs.nume}</h1>
-          <h2>{produs.pret}</h2>
-          <h3>{produs.material}</h3>
-          <h4>{produs.dimensiuni}</h4>
-          <button onClick={handleAddToCart}>add to card</button>
+          <h2>{produs.material}</h2>
+          <h3>{produs.dimensiuni}</h3>
+          <h4>{produs.pret}</h4>
+          <button onClick={handleAddToCart}>ADD TO CART</button>
         </div>
       </div>
 

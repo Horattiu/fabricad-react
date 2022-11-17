@@ -41,3 +41,7 @@
 .navbar-mobile .cart-icon:hover {
   background-color: #f1356d;
 }
+
+.hamburger path {
+  fill: #f1356d;
+}

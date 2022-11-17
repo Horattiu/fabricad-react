@@ -54,9 +54,9 @@ function ShoppingCart({ isCartOpen, setIsCartOpen, cartItems, setCartItems }) {
           </div>
         ))}
         <div className="cart-total">TOTAL lei</div>
-        <div onClick={() => setIsCartOpen(false)} className="cart-close">
-          x
-        </div>
+      </div>
+      <div onClick={() => setIsCartOpen(false)} className="cart-close">
+        x
       </div>
     </div>
   ) : null;

@@ -10,15 +10,20 @@
 }
 
 .main-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+.background-container {
   background-color: rgba(241 233 233 / 48%);
-  /* height: 45rem; */
-  align-items: center;
 }
 
 .product-container {
-  margin: 0 3rem 9rem 3rem;
+  justify-self: center;
+  /* align-self: center; */
+  /* margin: 0 3rem 9rem 3rem; */
 }
 
 .card-container {
@@ -49,14 +54,14 @@
   margin-top: 2.2rem;
   font-size: 1.2rem;
   margin-left: 2rem;
-  color: rgb(63, 63, 63);
+  color: #333;
   font-weight: 500;
 }
 .product-price {
   font-size: 1.4rem;
   text-align: center;
   margin-top: 1rem;
-  color: rgb(63, 63, 63);
+  color: #333;
 }
 
 /* ///////////////////// TEXT, LOGO BOX ////////////////// */
@@ -64,14 +69,9 @@
 .text-box h1 {
   font-size: 3rem;
   margin-bottom: 0.6rem;
-  color: rgb(36, 36, 36);
+  color: #333;
   letter-spacing: 0.2rem;
   font-weight: 800;
-}
-
-.text-box p {
-  font-size: 1.5rem;
-  color: rgb(51, 51, 51);
 }
 
 .logo-box img {

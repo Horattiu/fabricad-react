@@ -7,7 +7,7 @@ import { CgCloseO } from "react-icons/cg";
 import { useState } from "react";
 import MobileNavLinks from "./MobileNavLinks";
 
-const MobileNav = ({ setIsCartOpen, props }) => {
+const MobileNav = ({ setIsCartOpen }) => {
   const [open, setOpen] = useState(false);
 
   const hamburgerIcon = (
@@ -39,7 +39,11 @@ const MobileNav = ({ setIsCartOpen, props }) => {
 
       {open ? closeIcon : hamburgerIcon}
       {open && (
-        <MobileNavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />
+        <MobileNavLinks
+          setIsCartOpen={setIsCartOpen}
+          isMobile={true}
+          closeMobileMenu={closeMobileMenu}
+        />
       )}
     </div>
   );
