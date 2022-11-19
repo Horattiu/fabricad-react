@@ -51,16 +51,17 @@
   display: block;
 }
 .product-name h3 {
-  margin-top: 2.2rem;
+  text-align: center;
+  margin-top: 1rem;
   font-size: 1.2rem;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   color: #333;
   font-weight: 500;
 }
 .product-price {
   font-size: 1.4rem;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
   color: #333;
 }
 
@@ -77,4 +78,8 @@
 .logo-box img {
   display: block;
   width: 17rem;
+}
+
+.mobile-modal {
+  z-index: 999;
 }

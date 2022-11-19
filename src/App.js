@@ -15,7 +15,7 @@ function App() {
     {
       id: 1,
       nume: "Produs1",
-      pret: "500 lei",
+      pret: 500,
       material: "material: plywood",
       dimensiuni: "20 x 80cm",
 
@@ -26,7 +26,7 @@ function App() {
     {
       id: 2,
       nume: "Produs2",
-      pret: "900 lei",
+      pret: 900,
       material: "material: plywood",
       dimensiuni: "50 x 90cm",
       imgPath: require("../src/img/img8.jpg"),
@@ -35,7 +35,7 @@ function App() {
     {
       id: 3,
       nume: "Produs3",
-      pret: "202 lei",
+      pret: 200,
       material: "material: plywood",
       dimensiuni: "50 x 140cm",
 
@@ -45,7 +45,7 @@ function App() {
     {
       id: 4,
       nume: "Produs4",
-      pret: "600 lei",
+      pret: 600,
       material: "material: plywood",
       dimensiuni: "200 x 90cm",
 

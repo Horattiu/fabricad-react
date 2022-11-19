@@ -8,15 +8,12 @@
 .navbar-mobile .links-mobile {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  font-size: 1.1rem;
+  gap: 3rem;
+  z-index: 999;
   height: 100vh;
+  font-weight: 400;
 }
 
-.links-mobile {
-  margin: 0 auto;
-  z-index: 99;
-}
 .navbar-mobile a {
   text-decoration: none;
 }

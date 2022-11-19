@@ -50,10 +50,16 @@ function ShoppingCart({ isCartOpen, setIsCartOpen, cartItems, setCartItems }) {
                 +
               </button>
             </div>
-            <span className=" cart-pret"> {produs.pret}</span>
+            <span className=" cart-pret">{produs.pret}</span>
           </div>
         ))}
-        <div className="cart-total">TOTAL lei</div>
+        <div className="cart-total">
+          total
+          {cartItems.reduce((total, cartItem) => {
+            total += cartItem.pret;
+            return total;
+          }, 0)}
+        </div>
       </div>
       <div onClick={() => setIsCartOpen(false)} className="cart-close">
         x
