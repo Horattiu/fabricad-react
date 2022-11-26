@@ -47,7 +47,7 @@ const Produs = ({ produse, setCartItems, cartItems }) => {
           <h1>{produs.nume}</h1>
           <h2>{produs.material}</h2>
           <h3>{produs.dimensiuni}</h3>
-          <h4>{produs.pret}</h4>
+          <h4>{produs.pret} lei</h4>
           <button onClick={handleAddToCart}>ADD TO CART</button>
         </div>
       </div>

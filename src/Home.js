@@ -6,7 +6,7 @@ import Vid from "./components/Video";
 const Home = () => {
   return (
     <div className="home">
-      <Vid />
+      <Vid autoPlay muted="true" loop />
       <Produse />
       <Proiecte />
       <Footer />

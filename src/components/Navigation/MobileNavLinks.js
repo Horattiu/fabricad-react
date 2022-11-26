@@ -8,13 +8,13 @@ const MobileNavLinks = ({ setIsCartOpen, closeMobileMenu, isMobile }) => {
     <div className="mobile-modal">
       <div className="links-mobile">
         <Link to="/despre" onClick={() => isMobile && closeMobileMenu()}>
-          DESPRE
+          despre
         </Link>
         <Link to="/produse" onClick={() => isMobile && closeMobileMenu()}>
-          PRODUSE
+          produse
         </Link>
         <Link to="/proiecte" onClick={() => isMobile && closeMobileMenu()}>
-          PROIECTE
+          proiecte
         </Link>
         <div onClick={() => setIsCartOpen(true)}>
           <FiShoppingCart className="cart-icon" />

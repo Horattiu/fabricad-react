@@ -5,7 +5,7 @@ import "./video.css";
 function Vid() {
   return (
     <div className="video-container">
-      <video src={cncVid} autoPlay={true} loop={true} muted={true} />
+      <video src={cncVid} autoPlay muted="true" loop />
       <p>
         digital fabrication <br />
         CNC cutting
