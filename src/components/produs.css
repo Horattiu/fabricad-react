@@ -1,77 +1,95 @@
 .picture-box img {
-  max-width: 22rem;
+  width: 28rem;
   border-radius: 10px;
 }
 
-.picture-box {
-  /* width: 22rem; */
-}
 
 .wrap-container {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 5rem;
+  background-color: rgba(245, 245, 245, 0.182);
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+
   /* align-items: center; */
   /* margin-right: 4rem; */
 }
 
 .details {
-  width: 20rem;
+  width: 22rem;
+  height: 20rem;
   margin-left: 3rem;
   padding: 1rem;
   border-radius: 10px;
-  background-color: rgba(240, 240, 240, 0.521);
-  align-self: baseline;
+  background-color: rgb(242, 242, 242);
+  /* align-self: baseline; */
   /* text-align: center; */
 
   /* max-width: 14rem; */
   /* width: 14rem; */
 }
 
-.details button:hover {
+.details button:active {
   background-color: #f1356d;
   color: white;
 }
 
+
+
+
 .details h1 {
   font-weight: 500;
+  padding-left: 3rem;
+  padding-top: 1rem;
 
-  margin-bottom: 1rem;
   color: rgb(69, 70, 71);
 }
 
 .details h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 300;
   color: rgb(73, 73, 73);
+  padding-left: 3rem;
+  padding-top: 2rem;
+
 }
+
 .details h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 300;
   color: rgb(73, 73, 73);
-  margin-top: 0.2rem;
+  padding-left: 3rem;
 }
+
 .details h4 {
   font-size: 1.8rem;
   color: #f1356d;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
   font-weight: 500;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-top: 1rem;
 
-  /* background-color: rgb(245, 245, 245); */
-  /* border-radius: 10px; */
-  /* display: inline-block; */
-  /* padding: 0.6rem; */
+}
+
+.details hr {
+  width: 4rem;
+  margin-left: 3rem;
+  color: #bebebe;
+  background-color: #bebebe;
+  height: 1px;
+  border: 0;
 }
 
 .details button {
-  padding: 1rem 3rem 1rem 3rem;
+  padding: 1rem 4rem 1rem 4rem;
   font-size: 1.2rem;
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  color: rgb(69, 70, 71);
-
-  /* justify-content: center; */
+  background-color: #d1d1d1;
+  /* margin-left: 2rem; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }

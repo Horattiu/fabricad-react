@@ -9,8 +9,8 @@ const Proiecte = () => {
 
   return (
     <section>
-      <div class="pulaa">
-        <span>PROIECTE</span>
+      <div class="projects-title">
+        <span>PROJECTS</span>
       </div>
       <FullScreenImage
         imageSrc={currentImage}
@@ -18,11 +18,9 @@ const Proiecte = () => {
         setIsOpen={setIsOpen}
       />
 
-      <div class="work-container">
+      <div class="work-container" data-aos="fade-up" data-aos-offset="180">
         <div class="work-list">
-          {/* <!-- <figure class="work-item"><img src="img/img5.jpg" alt="" /></figure> -->
-          <!-- <figure class="work-item"><img src="img/img6.jpg" alt="" /></figure> -->
-          <!-- <figure class="work-item"><img src="img/img9.jpg" alt="" /></figure> --> */}
+
           <figure
             onClick={() => {
               setIsOpen(true);

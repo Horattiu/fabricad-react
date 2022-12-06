@@ -3,22 +3,33 @@
     /* 9px / 16px  */
     font-size: 80%;
   }
+
+  .card-title {
+    padding-left: 8rem;
+  }
+
   .work-list {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 740px;
   }
+
   .product-container {
     margin: 0 2rem 2rem 2rem;
   }
+
   .main-container {
     justify-content: center;
     width: 50%;
     padding: 0;
   }
+
   .modal-content {
     width: 44rem;
   }
+
   .close-modal {
-    margin-top: 10rem;
+    /* padding-top: 24rem; */
+    /* margin-top: 10rem; */
   }
 }
 
@@ -29,6 +40,7 @@
     margin-top: -2rem;
     margin-left: 16%;
   }
+
   .navbar-mobile {
     display: flex;
     height: 5rem;
@@ -66,6 +78,7 @@
     /* background-color: rgba(255, 255, 255, 0.863); */
     /* backdrop-filter: blur(10px); */
   }
+
   .mobile-modal {
     width: 100%;
     position: absolute;
@@ -86,17 +99,18 @@
     height: 22rem;
   }
 
-  .modal-content {
+  /* .modal-content {
     width: 40rem;
-  }
-  .close-modal {
-    margin-top: 13rem;
-    margin-left: 43rem;
-  }
+  } */
+
+  /* .close-modal {
+    padding-top: 24rem;
+  } */
 
   .footer-box ul {
     margin-top: -1rem;
   }
+
   .facebook-logo {
     margin-left: -1rem;
     margin-right: 0.4rem;
@@ -107,6 +121,7 @@
   .quantity-buttons {
     margin-left: 1rem;
   }
+
   .cart-pret {
     margin-left: 1rem;
   }
@@ -115,11 +130,29 @@
 @media (max-width: 40rem) {
   .navbar-mobile .links-mobile {
     margin-top: 13rem;
+    font-size: 2rem;
   }
 
   .mobile-modal {
     z-index: 999;
   }
+
+  .carousel {
+    height: 40rem;
+  }
+
+  .carousel-arrow-right {
+    right: 2rem;
+  }
+
+  .carousel-arrow-left {
+    left: 2rem;
+  }
+
+  .card-title {
+    font-size: 3rem;
+  }
+
   .main-container {
     grid-template-columns: 1fr 1fr;
     width: 40%;
@@ -129,24 +162,18 @@
     flex-direction: column;
     gap: 3rem;
   }
+
   .picture-box {
     margin: 0 auto;
   }
+
   .details {
     margin: 0 auto;
     margin-bottom: 3rem;
   }
 
-  .details h1 {
-    margin-bottom: 0.6rem;
-  }
-  .details h4 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .details button {
-    margin: 0 auto;
-  }
+
+
   .footer-container {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -159,14 +186,18 @@
   .modal-content {
     width: 34rem;
   }
-  .close-modal {
-    margin-top: 16rem;
-    margin-left: 36rem;
-  }
+
+
+
+  /* .close-modal {
+    padding-top: 28rem;
+    padding-left: 38rem;
+  } */
 
   .footer-container .footer-box:nth-child(1) {
     grid-row: 2;
   }
+
   .footer-container .footer-box:nth-child(1) {
     /* margin-left: -5rem; */
     margin-top: 4rem;
@@ -191,20 +222,31 @@
   .main-container {
     grid-template-columns: 1fr;
   }
+
+
+
+  .card-title {
+    padding: 0;
+    padding-top: 8rem;
+  }
+
   .card-container {
     width: 15rem;
     height: 23rem;
   }
+
   .work-container {
     width: 80%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
   }
+
   .modal-content {
     width: 22rem;
   }
-  .close-modal {
-    margin-top: 8rem;
-    margin-left: 24rem;
-  }
+
+
+
 
   .footer-container {
     width: 90%;
@@ -214,35 +256,85 @@
   .cart-container {
     width: 80%;
   }
+
   .cart-content {
     padding: 1rem;
   }
+
   .cart-nume {
     margin-left: 0.4rem;
   }
 
+  .cart-pret {
+    padding-left: 3rem;
+  }
+
   .details {
     width: 18rem;
+    height: 16rem;
   }
+
   .picture-box img {
     width: 20rem;
+
   }
-  .details h1 {
-    margin-bottom: 0.4rem;
-    font-weight: 500;
+
+  .wrap-container {
+    padding-top: 4rem;
   }
+
+  .details h1,
   .details h2,
-  .details h3 {
-    font-weight: 300;
-    padding: 0;
+  .details h3,
+  .details h4 {
+
+    padding-left: 1rem;
+  }
+
+  .details h1 {
+    font-weight: 500;
+    padding-top: 0rem;
+  }
+
+  .details h2 {
+    padding-top: 1rem;
+
   }
 
   .details h4 {
+    font-size: 1.8rem;
+    color: #f1356d;
     font-weight: 500;
-    /* display: inline-block; */
+    padding-bottom: 0;
+    /* padding-left: 2rem;
+    padding-top: 2rem; */
+
+
+  }
+
+  .details hr {
+    margin-left: 1rem;
+  }
+
+  .details button {
+    margin-left: 1rem;
   }
 
   .navbar-mobile .links-mobile {
-    margin-top: 7rem;
+    font-size: 2rem;
   }
+
+  .close-modal {
+    padding-left: 24rem;
+    padding-top: 20rem;
+  }
+
+  .footer-container {
+    padding-left: 1.4rem;
+  }
+
+  .background-container {
+    padding-bottom: 4rem;
+  }
+
 }

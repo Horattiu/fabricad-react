@@ -20,7 +20,7 @@ const Footer = () => (
         <p>copyright@2022 by fabricadserv</p>
       </div>
       <div class="footer-box">
-        <h1>despre noi</h1>
+        <h1>About us</h1>
         <p>
           Atelierul se afla in localitatea, <br />
           Barai,strada ..nr.. jud.
