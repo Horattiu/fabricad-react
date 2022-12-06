@@ -14,12 +14,11 @@ const Produse = () => {
       ? navigate(`${produsId}`)
       : navigate(`produse/${produsId}`);
   return (
-    <article>
-      <div class="pula">
-        <span>PRODUSE</span>
-      </div>
-
+    <>
       <div className="background-container">
+        <div class="products-title">
+          <span>PRODUCTS</span>
+        </div>
         <div class="main-container">
           <div
             class="product-container"
@@ -93,7 +92,7 @@ const Produse = () => {
           </div>
         </div>
       </div>
-    </article>
+    </>
   );
 };
 

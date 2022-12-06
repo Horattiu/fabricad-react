@@ -30,3 +30,16 @@ video {
   font-weight: 600;
   letter-spacing: -0.5px;
 }
+
+.text-container {
+  top: 15rem;
+  left: 17%;
+  position: absolute;
+  line-height: 3.4rem;
+  /* line-height: 5.4rem; */
+}
+
+.text-container h2 {
+  font-size: 3.4rem;
+  color: white;
+}

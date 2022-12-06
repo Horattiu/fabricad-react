@@ -9,6 +9,8 @@
   backdrop-filter: blur(10px);
   z-index: 1000;
   cursor: pointer;
+  display: flex;
+
 }
 
 .modal-content {
@@ -21,11 +23,15 @@
 }
 
 .close-modal {
-  display: inline-block;
-  position: relative;
-  margin-left: 48rem;
-  margin-top: 3rem;
+  /* display: inline-block; */
+  /* position: relative; */
+  /* margin-left: 48rem; */
+  /* margin-top: 3rem; */
   font-size: 3rem;
-  color: #aaaaaa;
-  transform: rotate(45deg);
+  color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  justify-content: flex-end;
+  padding-left: 24rem;
+  padding-top: 10rem;
 }
